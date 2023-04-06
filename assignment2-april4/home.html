@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home page</title>
+    <link href="popupStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="background">
+        <img style="width: 100%; height: 100%;"src="bg1.jpg" alt="Background" />
+    </div>
+    <!-- <div class="button">
+        <a href="#popup1"><b>Open Form</b></a>
+    </div> -->
+    <div class="bttn">
+        <a href="#popup1"><button class="bttnn">Open form</button></a>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <div class="header">
+                <p>Enter your details here</p>
+                <a class="close" href="#">&times;</a>
+            </div>
+            <div class="content">
+                <form action="">
+                    <div class="row">
+                        <div class="column" style="margin-left: 10px;">
+                            <label for="firstname">First Name:</label>
+                            <input type="text"class="no-outline" required/>
+                            <br>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" required/>
+                            <br>
+                            <label for="age">Age:</label>
+                            <input type="number" class="age" required/>
+                            <label for="description">Description:</label>
+                            <textarea name="description" id="description" cols="22" rows="2" style="margin-left: 17px;margin-top: 10px;"></textarea>
+                        </div>
+                        <div class="column">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text"class="no-outline" required/>
+                            <br>
+                            <label for="city">City:</label>
+                            <input type="text" class="city"required/>
+                            <br>
+                            <div class="row">
+                                <div class="column1">
+                                    <p>Gender:</p>
+                                </div>
+                                <div class="column2">
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="female" value="Female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="column1">
+                                    <p>Skills:</p>
+                                </div>
+                                <div class="column2">
+                                    <input type="checkbox" id="opt1" name="opt1" value="Java">
+                                <label for="opt1"> Java </label><br>
+                                <input type="checkbox" id="opt2" name="opt2" value="Python">
+                                <label for="opt2"> Python </label><br>
+                                <input type="checkbox" id="opt3" name="opt3" value="C++">
+                                <label for="opt3"> C++ </label><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"><button class="btn">Submit</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

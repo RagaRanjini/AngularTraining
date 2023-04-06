@@ -1,0 +1,15 @@
+.body{
+    width:100%;
+    position:absolute;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+p{
+    text-align: center;
+    font-size: 80pt;
+    margin-top: 10px;
+}
+img{
+    border-radius: 50%;
+    display:none;
+}

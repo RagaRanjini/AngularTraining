@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
+}
+.header{
+    width: 30%;
+    height: 45px;
+    margin-left: 35%;
+    background-color: #a927b0;
+    border-radius: 20px;
+}
+h3{
+    padding: 10px 10px 10px 35px;
+    color: white;
+}
+.slideshow{
+    width: 60%;
+    height: 60%;
+    margin-left:27%;
+    margin-top: 10px;
+   }
+
+#slide{
+width:80%;
+height:80%;
+border-radius: 20px;
+}
