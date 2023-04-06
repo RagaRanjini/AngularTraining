@@ -1,0 +1,3 @@
+map ---> returns new_array with the length of orihginal new_array
+filter ---> creates new_array with elements passing the condition
+reduce ----> returns a single value finally manipulating the array
