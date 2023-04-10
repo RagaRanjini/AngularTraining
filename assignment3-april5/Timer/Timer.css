@@ -34,6 +34,12 @@ p{
     left: 80%;
     background-color: red;
 }
+.button3{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    background-color: orange;
+}
 button{
     width: 110px;
     height: 50px;
