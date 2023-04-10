@@ -3,13 +3,14 @@ var hours= 0;
 var minutes= 0;
 var seconds= 0;
 var running=false;
-var intervalID=null;
-let timeref
+let Storetime;
 // console.log(hours+":"+minutes+":"+seconds);
+// console.log(TodayDate);
+document.getElementById("notify").innerHTML="Date: "+TodayDate.getDate()+"-"+TodayDate.getMonth()+"-"+TodayDate.getFullYear();
 function startTimer(){
     if(!running){
         running=true;
-        timeref = setInterval(function(){
+        Storetime = setInterval(function(){
             document.getElementById("timer").innerHTML=String(hours).padStart(2, '0')+":"+String(minutes).padStart(2, '0')+":"+String(seconds).padStart(2, '0');
             if(seconds==60){
                 minutes++;
@@ -28,7 +29,7 @@ function startTimer(){
 function stopTimer(){
     if(running){
         running=false;
-        clearInterval(timeref)
+        clearInterval(Storetime)
     }else{
         alert("Timer is already stopped !");
     }
