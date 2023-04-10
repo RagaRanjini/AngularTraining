@@ -1,4 +1,4 @@
-let countdown=10;
+let countdown=30;
 function count()
 {
     document.getElementById("countdown").innerHTML=countdown;
