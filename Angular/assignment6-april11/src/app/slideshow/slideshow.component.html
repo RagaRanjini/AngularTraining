@@ -1,0 +1,51 @@
+
+    <!--id_name: myCarousel gets all carousel controls 
+    similarly , class_name: carousel slide indicates the presence of slides using carousel
+    data-ride starts sliding slides once the page loads-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <!--data-target points to the id of HTML element that needs to be changed
+            data-slide-to is like index, order of slides; when that indicator is clicked it displays respective slide-->
+        </ol>
+
+        <!-- slides -->
+        <div class="carousel-inner" style="margin: 0;">
+            <!--class item refers to each slide-->
+            <div class="item active">
+                <img src="http://localhost/assignment6-images/slide1.png" alt="Life of Pi" style="width:100%; height: 300px;position: relative; text-align: center; color: white;">
+                <div class="text" style="position: absolute; top: 10px; left: 70px;">
+                    <h2>Powerful and Responsive Web Design</h2>
+                    <p>Picture credits to 'Life of Pi' crew</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="http://localhost/assignment6-images/slide2.png" alt="Baahubali" style="width: 100%; position: relative; text-align: center; color: white;height: 300px;">
+                <div class="text" style="position: absolute; top: 10px; left: 70px;">
+                    <h2>Baahubali Part-1</h2>
+                    <p>Featuring Actors Prabhas, Rana and Actress Anushka & Tamana Bhatia</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="http://localhost/assignment6-images/slide3.png" alt="ps-1" style="width: 100%; position: relative; text-align: center; color: white;height: 300px;">
+                <div class="text" style="position: absolute; top: 10px; left: 70px;">
+                    <h2>Ponniyin Selvan Part-1</h2>
+                    <p>Featuring Actors Vikram, Jeyam Ravi, Karthi and Actresses Trisha & Aishwarya rai</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- prev and next -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <!--data-slide allows users to slide through smoothly according to the given keyword-->
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
