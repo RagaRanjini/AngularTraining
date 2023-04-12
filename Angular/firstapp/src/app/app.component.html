@@ -1,13 +1,23 @@
 <!-- from html, to access something in ts file use {{}} -->
-<h1>{{title}}</h1> 
+<div id="header" [style.fontFamily]="currentfont">
+    <h1 [ngStyle]="currenttheme.h1">{{title}}</h1> 
+</div>
+<div id="links">
+    <select [(ngModel)]="currentfont">
+        <option>Arial</option>
+        <option>Courier</option>
+        <option>Arial</option>
+    </select>
+    <a (click)="changetheme('theme1')">theme1</a>
+    <a (click)="changetheme('theme2')">theme2</a>
+</div>
 <!-- access title in app.component.ts file -->
 <app-about></app-about>
-<div id="services">
+<div id="services" [ngStyle]="currenttheme.services">
     <h3>Our services</h3>
-    <app-service-box></app-service-box>
-    <app-service-box></app-service-box>
-    <app-service-box></app-service-box>
+    <app-service-box *ngFor="let x of services"></app-service-box>
+    <!-- <app-service-box></app-service-box> -->
 </div>
-<div id="footer">
+<div id="footer" [ngStyle]="currenttheme.footer">
     <h3>&copy; All copyrights reserved.ABC limited 2023</h3>
 </div>
