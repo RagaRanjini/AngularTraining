@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { productStyles } from '../styles/styledata';
 import { productsdata } from '../info/data';
 @Component({

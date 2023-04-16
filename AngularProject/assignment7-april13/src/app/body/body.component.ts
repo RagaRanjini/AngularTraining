@@ -10,5 +10,5 @@ export class BodyComponent {
   bodystyles=bodyStyles;
   productstyles=productStyles;
   @Input() heading="";
-  @Input() paragraph:string[]=[]
+  @Input() paragraph="";
 }

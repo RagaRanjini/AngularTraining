@@ -1,0 +1,23 @@
+<div class="footerclass" [ngStyle]="footerstyles.footerclass">
+    <div class="part1" [ngStyle]="footerstyles.part1">
+        <h3>Follow us on</h3>
+    <div class="icons" *ngFor="let icon of socialmedias">
+        <img src="{{icon}}" alt="logo" [ngStyle]="footerstyles.img">
+    </div>
+    </div>
+    <div class="part2" [ngStyle]="footerstyles.part2">
+        <h3>Contact us :</h3>
+        <div class="numbers" *ngFor="let contact of contacts">
+            <p>{{contact}}</p>
+        </div>
+    </div>
+    <div class="part3" [ngStyle]="footerstyles.part3">
+        <h3>E-mail IDs :</h3>
+        <div class="numbers" *ngFor="let email of emails">
+            <p>{{email}}</p>
+        </div>
+    </div>
+    <div class="part4" [ngStyle]="footerstyles.part4">
+        <img src="http://localhost/assignment7-images/footerimage.png" alt="footer_image" [ngStyle]="footerstyles.img2">
+    </div>
+</div>

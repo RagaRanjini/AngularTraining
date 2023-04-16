@@ -38,8 +38,9 @@ export const bodyStyles:any={
         position: "absolute",
         color: "black",
         top: "210px",
-        left: "425px",
-        fontFamily: "Arial"
+        left: "200px",
+        fontFamily: "Arial",
+        textAlign: "center"
     },
     h1:{
         position: "absolute",
@@ -68,7 +69,7 @@ export const productStyles={
     productsclass:{
         width: "300px",
         height: "400px",
-        marginLeft: "100px",
+        marginLeft: "90px",
         float: "left",
         textAlign: "center"
     },
@@ -82,5 +83,45 @@ export const productStyles={
         width: "140px",
         height: "140px",
         borderRadius: "50%"
+    }
+}
+export const footerStyles={
+    footerclass:{
+        width: "100%",
+        height: "190px",
+        background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,121,9,1) 0%, rgba(0,212,255,1) 100%)",
+        marginTop: "300px",
+        position: "relative"
+    },
+    img:{
+        width: "50px",
+        height: "50px",
+        float: "left"
+    },
+    part1:{
+        position: "absolute",
+        marginLeft: "100px",
+        color:"white",
+        marginTop: "30px"
+    },
+    part2:{
+        color: "white",
+        position: "absolute",
+        marginLeft: "350px",
+        marginTop: "30px"
+    },
+    part3:{
+        color: "white",
+        position: "absolute",
+        marginLeft: "600px",
+        marginTop: "30px"
+    },
+    part4:{
+        position: "absolute",
+        marginLeft: "950px",
+    },
+    img2:{
+        width: "250px",
+        height: "200px"
     }
 }
