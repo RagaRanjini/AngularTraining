@@ -1,0 +1,5 @@
+<div class="productsClass" [ngStyle]="productstyles.productsclass" *ngFor="let x of products.data">
+    <img src="{{x.img}}" alt="logo" [ngStyle]="productstyles.img">
+    <h2 [ngStyle]="productstyles.h2">{{x.name}}</h2>
+    <p [ngStyle]="productstyles.p">{{x.description}}</p>
+</div>
