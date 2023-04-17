@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { WelcomepageComponent } from './main/welcomepage/welcomepage.component';
+import { HomepageComponent } from './home/homepage/homepage.component';
+import { FormComponent } from './home/form/form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomepageComponent,
+    HomepageComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
