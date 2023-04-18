@@ -1,7 +1,7 @@
 <mat-toolbar class="top" [ngStyle]="styles.top">
     <h1 [ngStyle]="styles.h1">DH Healthcare Software Services</h1>
     <ul [ngStyle]="styles.ul">
-        <li [ngStyle]="styles.li"><a [ngStyle]="styles.a" routerLink="/Form">Open-Form</a></li>
         <li [ngStyle]="styles.li"><a [ngStyle]="styles.a" routerLink="/">Home</a></li>
+        <button mat-raised-button (click)="openForm()">Open form</button>  
     </ul>
 </mat-toolbar>

@@ -30,21 +30,14 @@ export const homeStyles={
     }
 }
 export const formStyles={
-    card:{
-        width:"30%",
-        height:"500px",
-        border: "solid #3f51b5",
-        marginLeft: "35%",
-        marginTop: "20px"
-    },
-    header:{
-        backgroundColor: "#3f51b5",
-        color: "white"
-    },
     fields:{
-        width: "90%",
-        marginTop: "20px",
         color:"blue",
-        marginLeft:"15px"
+        paddingLeft: "25px",
+        paddingTop: "30px",
+        width: "250px"
+    },
+    dialog:{
+        width: "300px",
+        height: "auto"
     }
 }
