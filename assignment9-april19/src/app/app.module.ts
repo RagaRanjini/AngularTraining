@@ -10,6 +10,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { TestimonialComponent } from './pages/testimonial/testimonial.component';
 import { ReachusComponent } from './pages/reachus/reachus.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
+import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
+import { FeedbackBoxComponent } from './pages/testimonial/feedback-box/feedback-box.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +21,17 @@ import { ReachusComponent } from './pages/reachus/reachus.component';
     HomeComponent,
     AboutComponent,
     TestimonialComponent,
-    ReachusComponent
+    ReachusComponent,
+    ContactBoxComponent,
+    ServiceBoxComponent,
+    FeedbackBoxComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
