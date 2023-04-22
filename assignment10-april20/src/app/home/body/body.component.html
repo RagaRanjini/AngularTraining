@@ -1,0 +1,14 @@
+<div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" *ngIf="(products.price>=value1)&&(products.price<=value2)">
+    <mat-card [ngStyle]="styles.card">
+        <div class="oval" [ngStyle]="styles.oval">
+            <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p>
+        </div>
+        <mat-card-header [ngStyle]="styles.header">
+            <h2>{{products.name}}</h2>
+        </mat-card-header>
+        <img mat-card-image [ngStyle]="styles.img" src="http://localhost/LetMeShop/{{products.image}}" alt="images">
+        <mat-card-footer>
+            <!-- <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p> -->
+        </mat-card-footer>
+    </mat-card>
+</div>
