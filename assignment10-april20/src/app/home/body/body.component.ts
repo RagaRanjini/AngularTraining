@@ -11,9 +11,10 @@ export class BodyComponent {
   @Input() value2:any;
   styles=productStyles
   onMouseEnter(cardbox: HTMLElement){
-    cardbox.style.transform="scale(1.02)",
-    cardbox.style.transition="transform .2s"
-    cardbox.style.color="#f72556"
+    cardbox.style.transform="scale(1.03)",
+    cardbox.style.transition="transform .4s"
+    cardbox.style.color="#e60790"
+    cardbox.style.cursor="pointer"
   }
   onMouseLeave(cardbox: HTMLElement){
     cardbox.style.transform="scale(1.0)"
