@@ -21,12 +21,6 @@ export class HomeComponent {
   type:string="view All";
   value1:number=0;
   value2:number=105000;
-  updateSetting1(value1:any) {
-    this.value1 = value1;
-  }
-  updateSetting2(value2:any) {
-    this.value2 = value2;
-  }
   productslist:any;
   constructor(private gp:GetProductsService){
     this.gp.getProducts().subscribe(

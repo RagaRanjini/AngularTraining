@@ -10,13 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { BodyComponent } from './home/body/body.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { RangepipePipe } from './pipes/rangepipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BodyComponent,
-    FilterPipe
+    FilterPipe,
+    RangepipePipe
   ],
   imports: [
     BrowserModule,

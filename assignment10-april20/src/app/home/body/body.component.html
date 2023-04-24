@@ -1,4 +1,4 @@
-<div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" *ngIf="(products.price>=value1)&&(products.price<=value2)">
+<div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" >
     <mat-card [ngStyle]="styles.card">
         <div class="oval" [ngStyle]="styles.oval">
             <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p>

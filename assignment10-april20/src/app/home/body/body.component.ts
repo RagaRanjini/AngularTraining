@@ -7,8 +7,8 @@ import { productStyles } from 'src/app/styles/Stylepage';
 })
 export class BodyComponent {
   @Input() products:any=[];
-  @Input() value1:any;
-  @Input() value2:any;
+  //@Input() value1:any;
+  //@Input() value2:any;
   styles=productStyles
   onMouseEnter(cardbox: HTMLElement){
     cardbox.style.transform="scale(1.03)",

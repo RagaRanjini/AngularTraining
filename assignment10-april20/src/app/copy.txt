@@ -1,0 +1,3 @@
+[value1]="value1" [value2]="value2"
+
+*ngIf="(products.price>=value1)&&(products.price<=value2)"
