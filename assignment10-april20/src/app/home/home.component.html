@@ -1,21 +1,9 @@
 <mat-toolbar [ngStyle]="styles.menubar">
     <span>LetMe Shop!</span>
-    <select [(ngModel)]="type" [ngStyle]="styles.dropdown">
-        <option [ngStyle]="styles.options" *ngFor="let products of options">{{products}}</option>
-    </select>
-    <div [ngStyle]="styles.outerdiv">
-        <div>
-            <mat-slider  [ngStyle]="styles.slider" color="accent" min="0" max="105000" step="1500">
-                <input  [(value)]="value1"  matSliderStartThumb>
-                <input  [(value)]="value2" matSliderEndThumb>
-            </mat-slider>
+        <div class="example-button-row" [ngStyle]="styles.links">
+            <button mat-raised-button color="accent" routerLink="/" [ngStyle]="styles.a">Home</button>
+            <button mat-raised-button color="accent" routerLink="/complaint" [ngStyle]="styles.a">Complaint</button>
         </div>
-        <div [ngStyle]="styles.innerdiv">
-            <p [ngStyle]="styles.p1">{{value1}}</p>
-            <p [ngStyle]="styles.p2">{{value2}}</p>
-        </div>
-    </div>
 </mat-toolbar>
-<app-body *ngFor="let products of productslist| filter: type | rangepipe:value1:value2" 
-[products]="products"></app-body>
+
 

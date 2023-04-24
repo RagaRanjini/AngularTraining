@@ -1,12 +1,29 @@
-<div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" >
-    <mat-card [ngStyle]="styles.card">
-        <div class="oval" [ngStyle]="styles.oval">
-            <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p>
+<div [ngStyle]="styles.menu">
+    <select [(ngModel)]="type" [ngStyle]="styles.dropdown">
+        <option [ngStyle]="styles.options" *ngFor="let products of options">{{products}}</option>
+    </select>
+    <div [ngStyle]="styles.outerdiv">
+        <div>
+            <mat-slider  [ngStyle]="styles.slider" color="accent" min="0" max="105000" step="1500">
+                <input  [(value)]="value1"  matSliderStartThumb>
+                <input  [(value)]="value2" matSliderEndThumb>
+            </mat-slider>
         </div>
-        <mat-card-header [ngStyle]="styles.header">
+        <div [ngStyle]="styles.innerdiv">
+            <p [ngStyle]="styles.p1">{{value1|currency:'USD'}}</p>
+            <p [ngStyle]="styles.p2">{{value2|currency:'USD'}}</p>
+        </div>
+    </div>
+</div>
+<div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" *ngFor="let products of productslist| filter: type | rangepipe:value1:value2" >
+    <mat-card [ngStyle]="stylesp.card">
+        <div class="oval" [ngStyle]="stylesp.oval">
+            <p [ngStyle]="stylesp.p">{{products.price | currency: 'USD'}}</p>
+        </div>
+        <mat-card-header [ngStyle]="stylesp.header">
             <h2>{{products.name}}</h2>
         </mat-card-header>
-        <img mat-card-image [ngStyle]="styles.img" src="http://localhost/LetMeShop/{{products.image}}" alt="images">
+        <img mat-card-image [ngStyle]="stylesp.img" src="http://localhost/LetMeShop/{{products.image}}" alt="images">
         <mat-card-footer>
             <!-- <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p> -->
         </mat-card-footer>

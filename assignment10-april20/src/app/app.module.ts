@@ -11,14 +11,15 @@ import { BodyComponent } from './home/body/body.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { RangepipePipe } from './pipes/rangepipe.pipe';
-
+import { ComplaintComponent } from './home/complaint/complaint.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BodyComponent,
     FilterPipe,
-    RangepipePipe
+    RangepipePipe,
+    ComplaintComponent
   ],
   imports: [
     BrowserModule,

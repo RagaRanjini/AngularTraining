@@ -1,0 +1,33 @@
+<div class="error" *ngIf="errors.length>0">
+    <ul >
+        <li *ngFor="let x of errors">{{x}}</li>
+    </ul>
+</div>
+<div class="form" [ngStyle]="styles.form">
+    <div [ngStyle]="styles.row1">
+        <mat-form-field [ngStyle]="styles.fields" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input [(ngModel)]="name" matInput>
+        </mat-form-field>
+        <mat-form-field [ngStyle]="styles.field2" appearance="fill">
+            <mat-label>E-mail Address</mat-label>
+            <input [(ngModel)]="mail" matInput>
+        </mat-form-field>
+    </div>
+    <mat-form-field [ngStyle]="styles.textarea" appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea [(ngModel)]="msg" matInput></textarea>
+    </mat-form-field>
+    <div  [ngStyle]="styles.row1">
+        <mat-form-field [ngStyle]="styles.fields" appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input type="text" [(ngModel)]="productname" matInput [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let option of options" [value]="option">
+                  {{option}}
+                </mat-option>
+              </mat-autocomplete>
+        </mat-form-field>
+        <button [ngStyle]="styles.button" mat-raised-button color="accent" (click)="post()">submit</button>
+    </div>
+</div>

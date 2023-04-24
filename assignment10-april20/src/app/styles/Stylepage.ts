@@ -42,15 +42,17 @@ export const homeStyles={
     },
     slider:{
         width: "240px",
-        marginLeft: "20%",
+        marginLeft: "-20%",
         marginTop:"10px"
     },
     dropdown:{
-        width: "300px",
+        width: "250px",
         height: "35px",
-        marginLeft: "43%",
-        border:"none",
-        borderRadius:"7px"
+        marginLeft: "15px",
+        marginTop:"20px",
+        borderRadius:"7px",
+        border:"solid #fa05ac",
+        backgroundColor:"#f5c1e5"
     },
     options:{
         backgroundColor:"#cdfaef"
@@ -58,6 +60,7 @@ export const homeStyles={
     outerdiv:{
         display:"flex",
         flexDirection:"column",
+        marginLeft:"60%"
     },
     innerdiv:{
         display:"flex",
@@ -67,9 +70,58 @@ export const homeStyles={
         color:"grey"
     },
     p1:{
-        marginLeft:"50px"
+        marginLeft:"-80px"
     },
     p2:{
-        marginLeft:"230px"
+        marginLeft:"160px"
+    },
+    links:{
+        marginLeft:"66%",
+        fontFamily:"sans-serif",
+        fontSize:"12pt"
+    },
+    a:{
+        marginLeft:"40px",
+        color:"white",
+        textDecoration:"none"
+    },
+    menu:{
+        display:"flex",
+        flexDirection:"row"
+    }
+}
+export const formStyles={
+    form:{
+        width: "500px",
+        height: "auto",
+        backgroundColor:"#f2a2d9",
+        borderRadius: "15px",
+        marginLeft: "30%",
+        marginTop:"10%"
+    },
+    fields:{
+        marginTop: "25px"
+    },
+    row1:{
+        display:"flex",
+        flexDirection:"row",
+        marginLeft:"25px"
+    },
+    row2:{
+        display:"flex",
+        flexDirection:"row",
+        marginLeft:"25px"
+    },
+    field2:{
+        marginTop: "25px",
+        marginLeft:"15px"
+    },
+    textarea:{
+        width: "435px",
+        marginLeft:"25px"
+    },
+    button:{
+        marginTop: "30px",
+        marginLeft:"100px"
     }
 }
