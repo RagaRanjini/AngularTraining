@@ -10,4 +10,7 @@ export class GetProductsService {
   getProducts():Observable<any>{
     return this.http.get("http://localhost:4500/products")
   }
+  getDetails(id:any):Observable<any>{
+    return this.http.get("http://localhost:4500/products/"+id)
+  }
 }

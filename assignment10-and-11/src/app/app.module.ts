@@ -9,9 +9,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { BodyComponent } from './home/body/body.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RangepipePipe } from './pipes/rangepipe.pipe';
 import { ComplaintComponent } from './home/complaint/complaint.component';
+import { DetailsComponent } from './home/details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ComplaintComponent } from './home/complaint/complaint.component';
     BodyComponent,
     FilterPipe,
     RangepipePipe,
-    ComplaintComponent
+    ComplaintComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { ComplaintComponent } from './home/complaint/complaint.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

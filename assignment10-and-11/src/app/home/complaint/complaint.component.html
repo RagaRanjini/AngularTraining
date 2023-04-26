@@ -1,4 +1,4 @@
-<div class="error" *ngIf="errors.length>0">
+<div class="error" *ngIf="errors.length>0" [ngStyle]="styles.error">
     <ul >
         <li *ngFor="let x of errors">{{x}}</li>
     </ul>

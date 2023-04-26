@@ -1,0 +1,16 @@
+<div [ngStyle]="styles.div" >
+    <mat-card [ngStyle]="styles.imgcard">
+        <mat-card-content>
+            <img [ngStyle]="styles.img" src="http://localhost/LetMeShop/{{details.image}}" alt="image">
+        </mat-card-content>
+    </mat-card>
+    <mat-card [ngStyle]="styles.card">
+        <mat-card-content [ngStyle]="styles.content">{{details.description}}</mat-card-content>
+        <mat-card-footer [ngStyle]="styles.footer">
+            <h2>{{details.name}}</h2>
+            <p>Price: {{details.price | currency: 'USD'}}</p>
+        </mat-card-footer>
+    </mat-card>
+</div>
+
+

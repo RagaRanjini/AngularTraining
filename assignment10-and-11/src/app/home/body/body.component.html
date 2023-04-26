@@ -16,6 +16,7 @@
     </div>
 </div>
 <div #cardbox (mouseenter)="onMouseEnter(cardbox)" (mouseleave)="onMouseLeave(cardbox)" *ngFor="let products of productslist| filter: type | rangepipe:value1:value2" >
+    <a routerLink="/products/{{products.id}}" [ngStyle]="stylesp.a">
     <mat-card [ngStyle]="stylesp.card">
         <div class="oval" [ngStyle]="stylesp.oval">
             <p [ngStyle]="stylesp.p">{{products.price | currency: 'USD'}}</p>
@@ -28,4 +29,6 @@
             <!-- <p [ngStyle]="styles.p">{{products.price | currency: 'USD'}}</p> -->
         </mat-card-footer>
     </mat-card>
+</a>
 </div>
+

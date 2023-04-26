@@ -32,6 +32,10 @@ export const productStyles={
         backgroundColor: "yellow",
         left: "180px",
         marginTop: "-20px"
+    },
+    a:{
+        textDecoration:"none",
+        color:"black"
     }
 }
 export const homeStyles={
@@ -97,7 +101,7 @@ export const formStyles={
         backgroundColor:"#f2a2d9",
         borderRadius: "15px",
         marginLeft: "30%",
-        marginTop:"10%"
+        marginTop:"4%"
     },
     fields:{
         marginTop: "25px"
@@ -123,5 +127,53 @@ export const formStyles={
     button:{
         marginTop: "30px",
         marginLeft:"100px"
+    },
+    error:{
+        width:"500px",
+        height:"auto",
+        backgroundColor: "#84f5ef",
+        marginLeft:"30%",
+        borderRadius:"10px"
+    }
+}
+export const detailsStyles={
+    div:{
+        marginLeft:"30px",
+        marginTop:"30px",
+        display:"flex",
+        flexDirection:"row"
+    },
+    img:{
+        width:"220px",
+        height:"220px",
+        borderRadius:"50%"
+    },
+    imgcard:{
+        width:"260px",
+        height:"260px",
+        borderRadius:"50%",
+        // marginBottom:"-15px",
+        marginLeft:"10px",
+        border:"solid #f205af",
+        boxShadow:"-4px -3px #fa70d3"
+    },
+    card:{
+        width:"380px",
+        height:"auto",
+        border:"solid #f205af",
+        boxShadow:"-4px -2px #fa70d3",
+        backgroundColor:"#c9f5d0",
+        borderRadius:"10px",
+        marginLeft:"20px"
+    },
+    content:{
+        padding:"18px",
+        paddingTop:"25px",
+        textAlign:"justify"
+    },
+    footer:{
+        paddingLeft:"18px",
+        backgroundColor:"#f5c9ef",
+        borderTop:"solid #f205af"
     }
 }
