@@ -19,15 +19,23 @@
         <textarea [(ngModel)]="msg" matInput></textarea>
     </mat-form-field>
     <div  [ngStyle]="styles.row1">
-        <mat-form-field [ngStyle]="styles.fields" appearance="fill">
-            <mat-label>Product Name</mat-label>
-            <input type="text" [(ngModel)]="productname" matInput [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let option of options" [value]="option">
+        <form class="example-form" >
+            <mat-form-field class="example-full-width" appearance="fill" [ngStyle]="styles.fields">
+              <mat-label>Product</mat-label>
+              <input type="text"
+              [(ngModel)]="productname"
+                     placeholder="Pick one"
+                     aria-label="Number"
+                     matInput
+                     [formControl]="myControl"
+                     [matAutocomplete]="auto">
+              <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
                   {{option}}
                 </mat-option>
               </mat-autocomplete>
-        </mat-form-field>
+            </mat-form-field>
+          </form>
         <button [ngStyle]="styles.button" mat-raised-button color="accent" (click)="post()">submit</button>
     </div>
 </div>

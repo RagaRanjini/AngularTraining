@@ -22,6 +22,6 @@ export class ReviewsComponent {
     card.style.backgroundColor="#f593e6"
   }
   onMouseLeave(card : HTMLElement){
-    card.style.backgroundColor="#86f0c7"
+    card.style.backgroundColor="#72f7cb"
   }
 }

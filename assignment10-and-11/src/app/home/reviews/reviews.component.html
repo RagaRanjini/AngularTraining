@@ -1,5 +1,7 @@
+<h1 [ngStyle]="styles.h1">Reviews</h1>
+<hr [ngStyle]="styles.hr">
 <div *ngFor="let x of review" >
     <div *ngIf="x.product==thisid" [ngStyle]="styles.card" #card (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
-    <p [ngStyle]="styles.review">{{x.reviewmsg}}</p>
+    <p [ngStyle]="styles.review">{{x.message}}</p>
     </div>  
 </div>

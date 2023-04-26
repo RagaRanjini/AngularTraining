@@ -14,6 +14,7 @@ import { RangepipePipe } from './pipes/rangepipe.pipe';
 import { ComplaintComponent } from './home/complaint/complaint.component';
 import { DetailsComponent } from './home/details/details.component';
 import { ReviewsComponent } from './home/reviews/reviews.component';
+import { AutocompletePipe } from './pipes/autocomplete.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReviewsComponent } from './home/reviews/reviews.component';
     RangepipePipe,
     ComplaintComponent,
     DetailsComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    AutocompletePipe
   ],
   imports: [
     BrowserModule,

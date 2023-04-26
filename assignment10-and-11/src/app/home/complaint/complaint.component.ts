@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { formStyles } from 'src/app/styles/Stylepage';
 import { ComplaintService } from 'src/app/services/complaint.service';
 import { FormControl } from '@angular/forms';
@@ -9,8 +9,9 @@ import { startWith, map } from 'rxjs/operators';
   templateUrl: './complaint.component.html',
   styleUrls: ['./complaint.component.css']
 })
-export class ComplaintComponent{
+export class ComplaintComponent  implements OnInit {
   styles=formStyles
+  option:string=""
 options:any=[
   "Washing Machine",
   "Refrigerator",

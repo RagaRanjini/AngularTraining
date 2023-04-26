@@ -184,7 +184,7 @@ export const detailsStyles={
         width:"300px",
         height:"auto",
         marginLeft:"220px",
-        marginTop:"30px",
+        marginTop:"40px",
         padding:"5px",
         textAlign:"center",
         boxShadow: "3px 4px #f205af",
@@ -192,6 +192,21 @@ export const detailsStyles={
     },
     h2:{
         marginLeft:"18%"
+    },
+    textarea:{
+        backgroundColor:"#f7d7f3"
+    },
+    button:{
+        width:"150px",
+        height:"40px",
+        marginTop:"20px",
+        backgroundColor:"#f702aa",
+        color:"white",
+        borderRadius:"10px",
+        padding:"10px"
+    },
+    error:{
+        color:"red"
     }
 }
 export const reviewStyles={
@@ -204,6 +219,18 @@ export const reviewStyles={
         height:"40px",
         marginLeft:"25%",
         marginTop:"20px",
-        backgroundColor:"#86f0c7"
+        backgroundColor:"#72f7cb",
+        borderRadius:"10px",
+        textAlign:"center",
+        cursor:"pointer"
+    },
+    hr:{
+        marginLeft:"25px",
+        marginRight:"35px"
+    },
+    h1:{
+        fontFamily:"calibri",
+        marginLeft:"25px",
+        marginTop:"25px"
     }
 }

@@ -19,17 +19,12 @@
                 <h2 [ngStyle]="styles.h2">Review please!</h2>
             </mat-card-header>
             <mat-card-content>
-                <div>
-                    <mat-form-field appearance="fill">
-                        <mat-label>Full Name</mat-label>
-                        <input [(ngModel)]="name" matInput>
-                    </mat-form-field>
-                    <mat-form-field appearance="fill">
-                        <mat-label >Give your review here...</mat-label>
-                        <textarea  [(ngModel)]="reviewmsg" matInput></textarea>
-                    </mat-form-field>
-                    <button mat-raised-button color="accent"  (click)="postReview()">Submit</button>
-                </div>
+                <form  [formGroup]="Form"  (submit)="postReview()">
+                    <textarea rows=4 cols=30 formControlName="message" [ngStyle]="styles.textarea"></textarea>
+                    <div [ngStyle]="styles.error"*ngIf='Form.controls.message.hasError("required")'>Should be filled</div>
+                    <div [ngStyle]="styles.error" *ngIf='Form.controls.message.hasError("minlength")'>Atleast 15 characters long</div>
+                    <button type="submit"  [disabled]="!Form.valid" [ngStyle]="styles.button">Post my review</button>
+                </form>
             </mat-card-content>
         </mat-card>
     </div>    

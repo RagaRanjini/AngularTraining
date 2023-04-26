@@ -9,13 +9,15 @@ import { FormBuilder,Validators } from '@angular/forms';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent {
-  name:any;
-  reviewmsg:any;
+  message:any;
   Form:any;
   styles=detailsStyles
   id:any;
   details:any;
-  constructor(private gp:GetProductsService,private ar:ActivatedRoute){
+  constructor(private fb:FormBuilder,private gp:GetProductsService,private ar:ActivatedRoute){
+    this.Form = this.fb.group({
+      message:['',[Validators.required,Validators.minLength(15)]]
+    });
     this.ar.params.subscribe(
       {
         next: (params)=>{
@@ -34,13 +36,12 @@ export class DetailsComponent {
   }
   postReview(){
     let data={
-      name: this.name,
       product: this.id,
-      reviewmsg: this.reviewmsg
+      message: this.Form.value.message
     }
     this.gp.postingReview(data).subscribe(
       {
-        next: ()=>{
+        next: (data:any)=>{
           alert('We got your review. Thanks !')
           location.reload();
         },
