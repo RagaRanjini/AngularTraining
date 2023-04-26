@@ -1,16 +1,38 @@
-<div [ngStyle]="styles.div" >
-    <mat-card [ngStyle]="styles.imgcard">
-        <mat-card-content>
-            <img [ngStyle]="styles.img" src="http://localhost/LetMeShop/{{details.image}}" alt="image">
-        </mat-card-content>
-    </mat-card>
-    <mat-card [ngStyle]="styles.card">
-        <mat-card-content [ngStyle]="styles.content">{{details.description}}</mat-card-content>
-        <mat-card-footer [ngStyle]="styles.footer">
-            <h2>{{details.name}}</h2>
-            <p>Price: {{details.price | currency: 'USD'}}</p>
-        </mat-card-footer>
-    </mat-card>
+<div [ngStyle]="styles.outerdiv"  >
+    <div [ngStyle]="styles.div" >
+        <mat-card [ngStyle]="styles.imgcard">
+            <mat-card-content>
+                <img [ngStyle]="styles.img" src="http://localhost/LetMeShop/{{details.image}}" alt="image">
+            </mat-card-content>
+        </mat-card>
+        <mat-card [ngStyle]="styles.card">
+            <mat-card-content [ngStyle]="styles.content">{{details.description}}</mat-card-content>
+            <mat-card-footer [ngStyle]="styles.footer">
+                <h2>{{details.name}}</h2>
+                <p>Price: {{details.price | currency: 'USD'}}</p>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+    <div>
+        <mat-card [ngStyle]="styles.form">
+            <mat-card-header>
+                <h2 [ngStyle]="styles.h2">Review please!</h2>
+            </mat-card-header>
+            <mat-card-content>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Full Name</mat-label>
+                        <input [(ngModel)]="name" matInput>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label >Give your review here...</mat-label>
+                        <textarea  [(ngModel)]="reviewmsg" matInput></textarea>
+                    </mat-form-field>
+                    <button mat-raised-button color="accent"  (click)="postReview()">Submit</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>    
 </div>
-
+<app-reviews [thisid]="id"></app-reviews>
 

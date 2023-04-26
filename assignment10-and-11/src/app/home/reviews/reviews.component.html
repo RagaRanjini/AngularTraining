@@ -1,0 +1,5 @@
+<div *ngFor="let x of review" >
+    <div *ngIf="x.product==thisid" [ngStyle]="styles.card" #card (mouseenter)="onMouseEnter(card)" (mouseleave)="onMouseLeave(card)">
+    <p [ngStyle]="styles.review">{{x.reviewmsg}}</p>
+    </div>  
+</div>

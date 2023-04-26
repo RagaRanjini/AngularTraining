@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RangepipePipe } from './pipes/rangepipe.pipe';
 import { ComplaintComponent } from './home/complaint/complaint.component';
 import { DetailsComponent } from './home/details/details.component';
+import { ReviewsComponent } from './home/reviews/reviews.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { DetailsComponent } from './home/details/details.component';
     FilterPipe,
     RangepipePipe,
     ComplaintComponent,
-    DetailsComponent
+    DetailsComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

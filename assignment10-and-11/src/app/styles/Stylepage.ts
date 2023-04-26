@@ -137,6 +137,10 @@ export const formStyles={
     }
 }
 export const detailsStyles={
+    outerdiv:{
+        display:"flex",
+        flexDirection:"row"
+    },
     div:{
         marginLeft:"30px",
         marginTop:"30px",
@@ -175,5 +179,31 @@ export const detailsStyles={
         paddingLeft:"18px",
         backgroundColor:"#f5c9ef",
         borderTop:"solid #f205af"
+    },
+    form:{
+        width:"300px",
+        height:"auto",
+        marginLeft:"220px",
+        marginTop:"30px",
+        padding:"5px",
+        textAlign:"center",
+        boxShadow: "3px 4px #f205af",
+        border: "solid 1px #f205af"
+    },
+    h2:{
+        marginLeft:"18%"
+    }
+}
+export const reviewStyles={
+    review:{
+        fontFamily:"calibri",
+        padding:"15px"
+    },
+    card:{
+        width:"72%",
+        height:"40px",
+        marginLeft:"25%",
+        marginTop:"20px",
+        backgroundColor:"#86f0c7"
     }
 }
