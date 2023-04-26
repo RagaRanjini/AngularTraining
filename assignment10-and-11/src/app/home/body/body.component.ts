@@ -45,4 +45,12 @@ export class BodyComponent {
     cardbox.style.transform="scale(1.0)"
     cardbox.style.color="black"
   }
+  onMouseEnterr(a: HTMLElement){
+    a.style.color="#e60790"
+    a.style.cursor="pointer"
+  }
+  onMouseLeavee(a: HTMLElement){
+    a.style.transform="scale(1.0)"
+    a.style.color="black"
+  }
 }
