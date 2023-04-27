@@ -11,7 +11,7 @@ import { startWith, map } from 'rxjs/operators';
 })
 export class ComplaintComponent  implements OnInit {
   styles=formStyles
-  option:string=""
+  // option:string=""
 options:any=[
   "Washing Machine",
   "Refrigerator",
