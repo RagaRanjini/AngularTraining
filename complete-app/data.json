@@ -1,0 +1,32 @@
+{
+  "Userdata": [
+    {
+      "name": "nobitha",
+      "dob": "2023-07-01T18:30:00.000Z",
+      "email": "nobitha@gmaiil.com",
+      "phone": "8738272911",
+      "id": 1
+    },
+    {
+      "name": "raju",
+      "dob": "2023-07-11T18:30:00.000Z",
+      "email": "raju.23@gmail.com",
+      "phone": "9821782178",
+      "id": 2
+    },
+    {
+      "name": "praveen",
+      "dob": "1993-02-08T18:30:00.000Z",
+      "email": "praveen@gmail.com",
+      "phone": "8291833281",
+      "id": 3
+    },
+    {
+      "name": "praveen",
+      "dob": "1993-02-02T18:30:00.000Z",
+      "email": "praveen@gamil.com",
+      "phone": "9183919331",
+      "id": 4
+    }
+  ]
+}
