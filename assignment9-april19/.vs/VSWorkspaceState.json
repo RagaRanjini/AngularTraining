@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\testimonial",
+    "\\src\\app\\pages\\testimonial\\feedback-box"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\testimonial\\feedback-box\\feedback-box.component.html",
+  "PreviewInSolutionExplorer": false
+}
